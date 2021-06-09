@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledListElement = styled.li`
-   flex: 1;
-   background: red;
+export const StyledListElement = styled.tr`
+   color: white;
+   text-align: center;
 `;

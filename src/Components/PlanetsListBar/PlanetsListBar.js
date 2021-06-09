@@ -5,12 +5,14 @@ import { StyledBar } from './PlanetsListBar.css';
 const PlanetsListBar = () => {
    return (
       <StyledBar>
-         <span>Name</span>
-         <span>Rotation Period</span>
-         <span>Climate</span>
-         <span>Gravity</span>
-         <span>Created</span>
-         <span>URL</span>
+         <tr>
+            <th>Name</th>
+            <th>Rotation Period</th>
+            <th>Climate</th>
+            <th>Gravity</th>
+            <th>Creared</th>
+            <th>Url</th>
+         </tr>
       </StyledBar>
    );
 };

@@ -16,14 +16,14 @@ export const GlobalStyles = createGlobalStyle`
     height: 100vh;
     z-index:-50;
  }
-  button{
-    cursor:pointer;
-    border:0;
-    background:transparent;
-    outline:none;
-  }
-  ul{
-    list-style:none;
+ a{
+     color:white;
+     text-decoration:none;
+ }
+  table{
+   flex:8;
+    color: white;
+    font-size: 2vh;
   }
  
 `;

@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 
-export const StyledBar = styled.nav`
-   width: 100vw;
-   height: 50px;
-   color: white;
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
+export const StyledBar = styled.thead`
+   > tr th {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 300;
+   }
 `;
