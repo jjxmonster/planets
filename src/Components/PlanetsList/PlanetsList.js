@@ -1,26 +1,33 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import PlanetsListElement from '../PlanetsListElement';
 import { StyledPlanetsList } from './PlanetsList.css';
 
 const PlanetsList = ({ planets }) => {
-   const planetsMap = planets.map(planet => {
-      const { name, rotation_period, climate, gravity, created, url } = planet;
-      return (
-         <PlanetsListElement
-            planetDetails={{
-               name,
-               rotation_period,
-               climate,
-               gravity,
-               created,
-               url,
-            }}
-         />
-      );
-   });
+   const [planetsToDisplay, setPlanetsToDisplay] = useState([]);
 
-   return <StyledPlanetsList>{planetsMap}</StyledPlanetsList>;
+   useEffect(() => {
+      setPlanetsToDisplay(
+         planets.map(planet => {
+            const { name, rotation_period, climate, gravity, created, url } =
+               planet;
+            return (
+               <PlanetsListElement
+                  planetDetails={{
+                     name,
+                     rotation_period,
+                     climate,
+                     gravity,
+                     created,
+                     url,
+                  }}
+               />
+            );
+         })
+      );
+   }, [planets]);
+
+   return <StyledPlanetsList>{planetsToDisplay}</StyledPlanetsList>;
 };
 
 export default PlanetsList;

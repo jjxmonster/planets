@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 
 export const StyledBar = styled.thead`
-@media (max-width: 1000px) {
+@media (max-width: 750px) {
    display:none;
 }
    > tr th {
       text-align: center;
       text-transform: uppercase;
       font-weight: 300;
+      font-size:2vh;
    }
    > tr .filter-button {
       cursor: pointer;

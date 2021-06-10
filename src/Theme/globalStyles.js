@@ -7,6 +7,7 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing:border-box;
   }
   body{
+
     font-family: 'Trispace', sans-serif;
   }
   #tsparticles {

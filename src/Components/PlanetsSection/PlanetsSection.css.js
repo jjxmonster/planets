@@ -32,6 +32,8 @@ export const StyledListNavigation = styled.nav`
 `;
 
 export const StyledNavigationContent = styled.span`
+   color: ${({ active }) =>
+      active === 'true' ? 'rgba(255,255,255,0.4)' : 'white'};
    padding: 20px;
    &:hover {
       cursor: pointer;

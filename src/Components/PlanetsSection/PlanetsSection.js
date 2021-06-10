@@ -33,23 +33,23 @@ const PlanetsSection = () => {
    useEffect(() => {
       switch (sortAscendingOrdescendingByRotation) {
          case 'ascending':
-            setFilteredPlanets(
+            return setFilteredPlanets(
                results.sort((a, b) => {
                   return a.rotation_period - b.rotation_period;
                })
             );
-            break;
+
          case 'descending':
-            setFilteredPlanets(
+            return setFilteredPlanets(
                results.sort((a, b) => {
                   return b.rotation_period - a.rotation_period;
                })
             );
-            break;
          default:
             break;
       }
    }, [results, sortAscendingOrdescendingByRotation]);
+
    return (
       <PlanetsSectionWrapper>
          <table>

@@ -11,16 +11,31 @@ const PlanetsListElement = ({ planetDetails }) => {
          return (
             <>
                <StyledListElement>
-                  <td>{name}</td>
-                  <td>{rotation_period}</td>
-                  <td>{climate}</td>
+                  <td>
+                     <span>name:</span>
+                     {name}
+                  </td>
+                  <td>
+                     <span>rotation:</span>
+                     {rotation_period}
+                  </td>
+                  <td>
+                     <span>climate:</span>
+                     {climate}
+                  </td>
                </StyledListElement>
                <StyledListElement>
-                  <td>{gravity}</td>
-                  <td>{date}</td>
+                  <td>
+                     <span>gravity:</span>
+                     {gravity}
+                  </td>
+                  <td>
+                     <span>created:</span>
+                     {date}
+                  </td>
                   <td>
                      <a target='_blank' rel='noreferrer' href={url}>
-                        click
+                        <span>api:</span>click
                      </a>
                   </td>
                </StyledListElement>
